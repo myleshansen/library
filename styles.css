@@ -1,0 +1,42 @@
+:root {
+    --blue: #1e90ff;
+    --light-blue: #87cefa;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav h1 {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.nav button {
+    background: var(--blue);
+    color: #fff;
+    margin-right: 1rem;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.nav button:hover {
+    background: var(--light-blue);
+}
+
+#books {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
